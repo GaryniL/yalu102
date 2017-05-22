@@ -6,6 +6,16 @@ A "work in progress" iOS jailbreak for 64-bit devices created by [qwertyoruiopz]
 
 Please use the "Issues" tab for **code related** issues only. If you need support please search on [/r/jailbreak](https://reddit.com/r/jailbreak) before posting a question there.
 
+## What's difference between this repo (@garynil) and original repo (kpwn/yalu102) 
+I added **IOKit framework** into this project makes building more easier and directly ([method](https://garynil.tw/2017/01/298)). Now you can clone it and build the Yalu102.app directly.
+
+Also, I found dropbear (SSH tool) won't load after jailbreaked. You can solve it by put dropbear.plist into /Library/LaunchDaemons/dropbear.plist and start it by 
+`$ launchctl load /Library/LaunchDaemons/dropbear.plist`
+I fixed the problem in this version.
+
+If you have any problem with jailbreak, please contact [original repo](https://github.com/kpwn/yalu102) matainer.
+
+
 ## Supported Devices and iOS versions
 
 | Device | Version |
